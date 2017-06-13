@@ -8,21 +8,23 @@
 /*1. Declare a variable named `howManyLetters` and find out how many letters are in the given string below. Console.log your result.*/
 
 var longestPlaceName = "Taumatawhakatangihangakoauauotamateaturipukakapiki- maungahoronukupokaiwhenuakitanatahu";  //Yes, this is a real place located in Porangahau, Central Hawke's Bay.
-
-
+var howManyLetters=longestPlaceName.length;
+console.log(howManyLetters); //WHAT IS NODE REPL?
 
 /*Next, concatenate and console.log the following phrase:
 "x is the longest place name in the world and has y letters in its name."
 where x represents the value at `longestPlaceName` and y represents the value at `howManyLetters`*/
 
-
+var Porangahau = longestPlaceName + " is the longest place name in the world and has " + howManyLetters + " letters in its name.";
+console.log(Porangahau);
 /*The string.charAt() method returns the character at the specified index (position).*/
 
 /*2. Declare a variable named `fifthLetter` and find out which letter is in the 5th position in the string below. Console.log your result.*/
 
 var iDidntKnow = "The national animal of Scotland is the Unicorn";
 
-
+var fifthLetter = iDidntKnow.charAt(5);
+console.log(fifthLetter);
 
 /*The indexOf() method returns the index (position) of the first occurence of a specified text in a string.*/
 
@@ -30,7 +32,8 @@ var iDidntKnow = "The national animal of Scotland is the Unicorn";
 
 var randomFact = "All pandas in the world are on loan from China.";
 
-
+var worldLocator = randomFact.indexOf('world');
+console.log(worldLocator);
 
 /*The slice() method extracts a part of a string and returns the extracted part into a new string. This method takes 2 parameters: the starting index (position) and the ending index (position)*/
 
@@ -38,7 +41,8 @@ var randomFact = "All pandas in the world are on loan from China.";
 
 var edward = "People are afraid of me because I am different";
 
-
+var scissorHand = edward.slice(7,17);
+console.log(scissorHand);
 
 /*The replace() method replaces a specified value with another value in a string.*/
 
@@ -46,7 +50,8 @@ var edward = "People are afraid of me because I am different";
 
 var grasshopper = "In order to taste my cup of water you must first fill your cup.";
 
-
+var theSifu = grasshopper.replace("fill","empty");
+console.log(theSifu);
 
 /*The toLowerCase() method converts the characters in a string to lower case.*/
 
@@ -54,14 +59,16 @@ var grasshopper = "In order to taste my cup of water you must first fill your cu
 
 var bigTime = "BRUuHHHH, I AM DA GreaTest!";
 
-
+var smallKine = bigTime.toLowerCase(0,8); //how do you only lowercase some letters, and not all?
+console.log(smallKine);
 
 /*The toUpperCase() method converts the characters in a string to upper case.*/
 
 /*7. Declare a variable named `bigBand` that will convert the string below to all upper case. Console.log your result.*/
 
 var bandName = "the beatles";
-
+var bigBand = bandName.toUpperCase();
+console.log(bigBand);
 
 
 /*The split() method converts a string into an array, by separating the string into substrings.*/
@@ -70,15 +77,16 @@ var bandName = "the beatles";
 
 var oreos = "red velvet, cookie dough, peanut butter, banana split, birthday cake";
 
-
+var oreoList = oreos.split();
+console.log(oreoList);
 
 /*The substr() method is similar to slice(). The difference is that the second parameter specifies the length of the extracted part. The 2 parameters: the starting index (position) and the length of the extracted part. */
 
 /*9. Declare a variable named `favDrink` and extract "gin" from the string below. Console.log your result.*/
 
 var drinkMenu = "rum, gin, vodka, kool-aid, haterade";
-
-
+var favDrink = drinkMenu.substr(5,3);
+console.log(favDrink);
 
 
 
